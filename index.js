@@ -1,5 +1,5 @@
 const readline = require('readline');
-const operations = require('../challenge2/operations');
+const operations = require('../challenge-02/operations');
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -16,6 +16,9 @@ const hitungNilai = () => {
       operations.nilaiMaxMin(nilai);
       operations.mean(nilai);
       operations.filterLulus(nilai);
+      operations.urutkanNilai(nilai);
+      // operations.nilaiCari(nilai);
+      operations.cariNilai(90);
     } else {
       if (!operations.validateNumbers(answer)) {
         console.log('nilai yang anda masukan tidak valid');
